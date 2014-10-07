@@ -34,11 +34,10 @@
 											</h4>
 
 											<div class="space-6"></div>
-											 
-											 <form:form id="login-form" method="post" action="${rootURL}login" modelAttribute="user" >
-											
-								                 <label>	<span class="red">${errormsg}</span>  </label>
-												
+											 <form:form id="loginForm" method="post" action="${rootURL}login" modelAttribute="user" >
+											<c:if test="${param.error != null}">
+									                 <label>	<span class="red">Invalid UserName and Password.</span> </label>
+									         </c:if>
 												<fieldset>
 												  <div class="form-group">
 													<label class="block clearfix">
@@ -190,7 +189,7 @@
 												</div>	
 											<div class="form-group">
 													<label class="block">
-														<input type="checkbox" class="ace" id="accept" name="accept""/>
+														<input type="checkbox" class="ace" id="accept" name="accept"/>
 														<span class="lbl">
 															I accept the
 															<a href="#">User Agreement</a>

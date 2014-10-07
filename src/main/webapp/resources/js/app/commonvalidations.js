@@ -10,32 +10,28 @@
 				$('.widget-box.visible').removeClass('visible');//hide others
 				$(target).addClass('visible');//show target
 			 });
-			
-										
-				$('#login-form').validate({
+													
+				$('#loginForm').validate({
 					errorElement: 'div',
 					errorClass: 'help-block',
 					focusInvalid: false,
 					rules: {
 						username: {
-							required: true,
-							username:true
+							required: true
 						},
 						password: {
-							required: true,
-							password:true
+							required: true
 						},
 						
 					},
-			
 					messages: {
 						username: {
-							required: "Please provide username.",
-							username: "Please provide username."
+							required: "Please provide username."
+							
 						},
 						password: {
-							required: "Please provide Password.",
-							password: "Please provide Password."
+							required: "Please provide Password."
+								
 						},
 						
 					},
@@ -55,6 +51,7 @@
 					},
 			
 					submitHandler: function (form) {
+						 form.submit();
 					},
 					invalidHandler: function (form) {
 					}
@@ -108,26 +105,23 @@
 					rules: {
 						re_email: {
 							required: true,
-							re_email:true
+							email:true
 						},
 						re_username: {
-							required: true,
-							re_userName:true
+							required: true
 						},
 						re_password: {
 							required: true,
-							re_password :true,
 							minlength: 5
 						},
 						re_cnfpassword: {
 							required: true,
-							re_cnfpassword:true,
 							minlength: 5,
 							equalTo: "#re_password"
 						},
 						accept: {
-							required: true,
-							accept:true
+							required: true
+							
 						},
 											
 					},
@@ -135,20 +129,20 @@
 					messages: {
 						re_email: {
 							required: "Please provide Email.",
-							re_email:"Please provide Email."
+							email:"Please provide Email."
 						},
 						re_username: {
-							required: "Please provide username.",
-							re_username:"Please provide username."
+							required: "Please provide username."
+							
 						},
 						re_password: {
 							required: "Please provide password.",
-							re_password:"Please provide password.",
+							
 							minlength: "Please specify a secure password."
 						},
 						re_cnfpassword: {
-							required: "Please reenter password.",
-							re_cnfpassword:"Please reenter password."
+							required: "Please reenter password."
+							
 						},
 						accept: "Please accept our policy"
 																	

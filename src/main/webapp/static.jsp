@@ -40,7 +40,7 @@
 		
 		<!--[if !IE]> -->
 		<script type="text/javascript">
-			window.jQuery || document.write("<script src='../app/resources/js/jquery.min.js'>"+"<"+"/script>");
+			window.jQuery || document.write("<script src='/app/resources/js/jquery.min.js'>"+"<"+"/script>");
 		</script>
 
 		<!--[if !IE]> -->
@@ -70,10 +70,6 @@
 		
 		
 		<!-- the following scripts are used in demo only for onpage help and you don't need them -->
-		<link href="<c:url value="/app/resourcescss/ace.onpage-help.css" />" rel="stylesheet" >
-		
-		
-		
 
 		<script type="text/javascript"> ace.vars['base'] = '..'; </script>
 		
@@ -98,7 +94,6 @@
 		
 			<!--  Application specific JS -->
 		<script src="<c:url value="/app/resources/js/app/commonvalidations.js"/>"></script>
-		<script src="<c:url value="/app/resources/js/app/common.js"/>"></script>
 		<script src="<c:url value="/app/resources/js/app/dashboard.js"/>"></script>
 		
 		
