@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@include file="../../taglib.jsp" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
@@ -293,9 +294,8 @@
 								<img class="nav-user-photo" src="../resources/avatars/user.jpg" alt="Jason's Photo" />
 								<span class="user-info">
 									<small>Welcome,</small>
-									Jason
+								    <sec:authentication property="principal.username"/>
 								</span>
-
 								<i class="ace-icon fa fa-caret-down"></i>
 							</a>
 
