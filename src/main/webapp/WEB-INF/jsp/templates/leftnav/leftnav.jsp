@@ -263,9 +263,9 @@
 
 						<ul class="submenu">
 							<li class="">
-								<a href="form-elements.html">
+								<a href="#" id="adddevice">
 									<i class="menu-icon fa fa-caret-right"></i>
-									Form Elements
+									Add Device
 								</a>
 
 								<b class="arrow"></b>

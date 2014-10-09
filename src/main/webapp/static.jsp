@@ -81,7 +81,6 @@
 		<script src="<c:url value="/app/resources/js/bootbox.min.js"/>"></script>
 		<script src="<c:url value="/app/resources/js/jquery.maskedinput.min.js"/>"></script>
 		<script src="<c:url value="/app/resources/js/select2.min.js"/>"></script>
-	
 			
 
 		<script src="<c:url value="/app/resources/js/jquery.ui.touch-punch.min.js"/>"></script>
@@ -92,10 +91,19 @@
 		<script src="<c:url value="/app/resources/js/flot/jquery.flot.resize.min.js"/>"></script>
 		
 		
+		<script src="<c:url value="/app/resources/js/fuelux/fuelux.wizard.min.js"/>"></script>
+		<script src="<c:url value="/app/resources/js/jquery.validate.min.js"/>"></script>
+		<script src="<c:url value="/app/resources/js/additional-methods.min.js"/>"></script>
+		<script src="<c:url value="/app/resources/js/bootbox.min.js"/>"></script>
+		<script src="<c:url value="/app/resources/js/jquery.maskedinput.min.js"/>"></script>
+		<script src="<c:url value="/app/resources/js/select2.min.js"/>"></script>
+		
+		
 			<!--  Application specific JS -->
 		<script src="<c:url value="/app/resources/js/app/commonvalidations.js"/>"></script>
+		<script src="<c:url value="/app/resources/js/app/common.js"/>"></script>
+		<script src="<c:url value="/app/resources/js/app/commonajax.js"/>"></script>
 		<script src="<c:url value="/app/resources/js/app/dashboard.js"/>"></script>
-		
 		
 		<script type="text/javascript">
 		

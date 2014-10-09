@@ -11,6 +11,11 @@
 <meta name="description" content="overview &amp; stats" />
 <meta name="viewport"
 	content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	
+	<script type="text/javascript">
+	    $(document).ready(OnloadFunction);
+	</script>
+	
 </head>
 <body class="no-skin">
 
@@ -25,7 +30,7 @@
 <jsp:include page="./templates/leftnav/leftnav.jsp"></jsp:include>
 
 
-<div class="main-content">
+<div class="main-content" id="main-content">
 				<!-- #section:basics/content.breadcrumbs -->
 				<div class="breadcrumbs" id="breadcrumbs">
 					<script type="text/javascript">
