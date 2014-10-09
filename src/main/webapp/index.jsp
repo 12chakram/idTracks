@@ -1,3 +1,3 @@
 <%
-	response.sendRedirect("app/welcome");
+	response.sendRedirect("app/dashboard");
 %>

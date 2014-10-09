@@ -19,10 +19,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class DashboardController 
 {
 	
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(method = RequestMethod.GET)
 	public String goToDashboard(Model model) {
 		model.addAttribute("myname", "KumarVayyala");
-		return "welcome";
+		return "dashboard";
 	}
 	
 	

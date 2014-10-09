@@ -2,10 +2,10 @@
  * 
  */
 $(document).ready(function() {
-	$("#adddevice").click(function() {
+	$("#godevice").click(function() {
 		$.ajax({
 			type : 'GET',
-			url : "http://localhost:9090/gauges/app/device/add",
+			url : "/gauges/app/device/",
 			success : function(data) {
 				 $('#main-content').html("");
 				 $('#main-content').html(data);
@@ -14,7 +14,7 @@ $(document).ready(function() {
 		});
 		return false;
 	});
-
+	
 })
 			
 		

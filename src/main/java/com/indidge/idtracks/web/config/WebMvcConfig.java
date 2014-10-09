@@ -35,7 +35,7 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter
 		super.addViewControllers(registry);
 		//registry.addViewController("").setViewName("welcome");	
 		registry.addViewController("login/form").setViewName("signin");		
-		registry.addViewController("welcome").setViewName("welcome");
+		registry.addViewController("dashboard").setViewName("welcome");
 		registry.addViewController("admin").setViewName("admin");
 		registry.addViewController("device").setViewName("device");
 	}

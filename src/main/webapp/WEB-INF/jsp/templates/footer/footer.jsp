@@ -8,7 +8,7 @@
 					<!-- #section:basics/footer -->
 					<div class="footer-content">
 						<span class="bigger-120">
-							<span class="blue bolder">Ace</span>
+							<span class="blue bolder">idTracks</span>
 							Application &copy; 2013-2014
 						</span>
 

@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class DeviceController 
 {
 	
-	@RequestMapping(value = "/add", method = RequestMethod.GET)
+	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String getDevicePage(Model model) {
 		model.addAttribute("myname", "KumarVayyala");
 		return "device";

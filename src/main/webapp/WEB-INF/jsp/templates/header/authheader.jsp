@@ -24,10 +24,10 @@
 				<!-- /section:basics/sidebar.mobile.toggle -->
 				<div class="navbar-header pull-left">
 					<!-- #section:basics/navbar.layout.brand -->
-					<a href="#" class="navbar-brand">
+					<a href="${rootURL}dashboard" class="navbar-brand">
 						<small>
 							<i class="fa fa-leaf"></i>
-							Ace Admin
+							id Tracks
 						</small>
 					</a>
 

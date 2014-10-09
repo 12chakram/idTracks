@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
-<div id="sidebar" class="sidebar                  responsive">
+<div id="sidebar" class="sidebar responsive">
 				<script type="text/javascript">
 					try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
 				</script>
@@ -43,7 +43,7 @@
 
 				<ul class="nav nav-list">
 					<li class="active">
-						<a href="index.html">
+						<a href="${rootURL}">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Dashboard </span>
 						</a>
@@ -253,8 +253,8 @@
 
 					<li class="">
 						<a href="#" class="dropdown-toggle">
-							<i class="menu-icon fa fa-pencil-square-o"></i>
-							<span class="menu-text"> Forms </span>
+							<i class="menu-icon fa fa-circle-o-notch"></i>
+							<span class="menu-text"> Devices </span>
 
 							<b class="arrow fa fa-angle-down"></b>
 						</a>
@@ -263,7 +263,7 @@
 
 						<ul class="submenu">
 							<li class="">
-								<a href="#" id="adddevice">
+								<a href="#" id="godevice">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Add Device
 								</a>

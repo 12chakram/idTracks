@@ -63,12 +63,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
 	    .authorizeRequests()
 	        .antMatchers("/app/login","/app/login/form**","/app/register","/app/logout").permitAll() // #4
 	        .antMatchers("/app/admin","/app/admin/**","/app/device").hasRole("ADMIN") // #6
+	        .antMatchers("/app/dashboard").authenticated()
 	        .anyRequest().authenticated() // 7
 	        .and()
 	    .formLogin()  // #8
 	        .loginPage("/app/login/form") // #9
 	        .loginProcessingUrl("/app/login")
-	        .defaultSuccessUrl("/app/dashboard/", true)
+	        .defaultSuccessUrl("/app/dashboard", true)
 	        .failureUrl("/app/login/form?error")
 	        .permitAll() // #5
 	        .and()
