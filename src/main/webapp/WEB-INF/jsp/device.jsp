@@ -14,9 +14,9 @@
 						</li>
 
 						<li>
-							<a href="#">Forms</a>
+							<a href="#">Devices</a>
 						</li>
-						<li class="active">${myname} &amp; Validation</li>
+						<li class="active">Add Device </li>
 					</ul><!-- /.breadcrumb -->
 
 					<!-- #section:basics/content.searchbox -->
@@ -127,27 +127,21 @@
 					<div class="page-content-area">
 						<div class="page-header">
 							<h1>
-								Form Wizard
+								Device Wizard
 								<small>
 									<i class="ace-icon fa fa-angle-double-right"></i>
-									and Validation
+									create
 								</small>
 							</h1>
 						</div><!-- /.page-header -->
 
 						<div class="row">
-							<div class="col-xs-12">
+							<div class="col-xs-6">
 								<!-- PAGE CONTENT BEGINS -->
-								<h4 class="lighter">
-									<i class="ace-icon fa fa-hand-o-right icon-animated-hand-pointer blue"></i>
-									<a href="#modal-wizard" data-toggle="modal" class="pink"> Wizard Inside a Modal Box </a>
-								</h4>
-
-								<div class="hr hr-18 hr-double dotted"></div>
 
 								<div class="widget-box">
 									<div class="widget-header widget-header-blue widget-header-flat">
-										<h4 class="widget-title lighter">New Item Wizard</h4>
+										<h4 class="widget-title lighter">Add New Device</h4>
 
 										<div class="widget-toolbar">
 											<label>
@@ -200,53 +194,46 @@
 
 													<form class="form-horizontal" id="sample-form">
 														<!-- #section:elements.form.input-state -->
-														<div class="form-group has-warning">
-															<label for="inputWarning" class="col-xs-12 col-sm-3 control-label no-padding-right">Input with warning</label>
+														<div class="form-group">
+															<label for="inputWarning" class="col-xs-12 col-sm-3 control-label no-padding-right">Device Name</label>
 
 															<div class="col-xs-12 col-sm-5">
 																<span class="block input-icon input-icon-right">
-																	<input type="text" id="inputWarning" class="width-100" />
-																	<i class="ace-icon fa fa-leaf"></i>
+																	<input type="text" id="inputWarning" class="input-xxlarge" />
 																</span>
 															</div>
-															<div class="help-block col-xs-12 col-sm-reset inline"> Warning tip help! </div>
 														</div>
-
-														<!-- /section:elements.form.input-state -->
-														<div class="form-group has-error">
-															<label for="inputError" class="col-xs-12 col-sm-3 col-md-3 control-label no-padding-right">Input with error</label>
+														
+														<div class="form-group">
+															<label for="inputWarning" class="col-xs-12 col-sm-3 control-label no-padding-right">Device Name</label>
 
 															<div class="col-xs-12 col-sm-5">
-																<span class="block input-icon input-icon-right">
-																	<input type="text" id="inputError" class="width-100" />
-																	<i class="ace-icon fa fa-times-circle"></i>
-																</span>
+																<div class="input-group">
+																	<input class="form-control date-picker input-xlarge" id="id-date-picker-1" type="text" data-date-format="dd-mm-yyyy" />
+																	<span class="input-group-addon">
+																		<i class="fa fa-calendar bigger-110"></i>
+																	</span>
+																</div>
 															</div>
-															<div class="help-block col-xs-12 col-sm-reset inline"> Error tip help! </div>
 														</div>
 
-														<div class="form-group has-success">
+														<div class="form-group">
 															<label for="inputSuccess" class="col-xs-12 col-sm-3 control-label no-padding-right">Input with success</label>
-
 															<div class="col-xs-12 col-sm-5">
 																<span class="block input-icon input-icon-right">
-																	<input type="text" id="inputSuccess" class="width-100" />
-																	<i class="ace-icon fa fa-check-circle"></i>
+																	<input type="text" id="inputSuccess" class="input-xxlarge" />
 																</span>
 															</div>
-															<div class="help-block col-xs-12 col-sm-reset inline"> Success tip help! </div>
 														</div>
 
-														<div class="form-group has-info">
+														<div class="form-group">
 															<label for="inputInfo" class="col-xs-12 col-sm-3 control-label no-padding-right">Input with info</label>
 
 															<div class="col-xs-12 col-sm-5">
 																<span class="block input-icon input-icon-right">
-																	<input type="text" id="inputInfo" class="width-100" />
-																	<i class="ace-icon fa fa-info-circle"></i>
+																	<input type="text" id="inputInfo" class="input-xxlarge" />
 																</span>
 															</div>
-															<div class="help-block col-xs-12 col-sm-reset inline"> Info tip help! </div>
 														</div>
 
 														<div class="form-group">
@@ -254,11 +241,9 @@
 
 															<div class="col-xs-12 col-sm-5">
 																<span class="input-icon block">
-																	<input type="text" id="inputError2" class="width-100" />
-																	<i class="ace-icon fa fa-times-circle red"></i>
+																	<input type="text" id="inputError2" class="input-xxlarge" />
 																</span>
 															</div>
-															<div class="help-block col-xs-12 col-sm-reset inline"> Error tip help! </div>
 														</div>
 													</form>
 
@@ -648,6 +633,245 @@
 									</div>
 								</div><!-- PAGE CONTENT ENDS -->
 							</div><!-- /.col -->
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							<div class="col-xs-6">
+									<!-- #section:pages/pricing.small-header -->
+									<div class="col-xs-4 col-sm-3 pricing-span-header">
+										<div class="widget-box transparent">
+											<div class="widget-header">
+												<h5 class="widget-title bigger lighter">Package Name</h5>
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main no-padding">
+													<ul class="list-unstyled list-striped pricing-table-header">
+														<li>Disk Space </li>
+														<li>Bandwidth </li>
+														<li>Email Accounts </li>
+														<li>MySQL Databases </li>
+														<li>Ad Credit </li>
+														<li>Free Domain </li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- /section:pages/pricing.small-header -->
+
+									<!-- #section:pages/pricing.small-body -->
+									<div class="col-xs-8 col-sm-9 pricing-span-body">
+										<div class="pricing-span">
+											<div class="widget-box pricing-box-small widget-color-red3">
+												<div class="widget-header">
+													<h5 class="widget-title bigger lighter">Basic</h5>
+												</div>
+
+												<div class="widget-body">
+													<div class="widget-main no-padding">
+														<ul class="list-unstyled list-striped pricing-table">
+															<li> 10 GB </li>
+															<li> 200 GB </li>
+															<li> 100 </li>
+															<li> 10 </li>
+															<li> $10 </li>
+
+															<li>
+																<i class="ace-icon fa fa-times red"></i>
+															</li>
+														</ul>
+
+														<div class="price">
+															<span class="label label-lg label-inverse arrowed-in arrowed-in-right">
+																$5
+																<small>/month</small>
+															</span>
+														</div>
+													</div>
+
+													<div>
+														<a href="#" class="btn btn-block btn-sm btn-danger">
+															<span>Buy</span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="pricing-span">
+											<div class="widget-box pricing-box-small widget-color-orange">
+												<div class="widget-header">
+													<h5 class="widget-title bigger lighter">Starter</h5>
+												</div>
+
+												<div class="widget-body">
+													<div class="widget-main no-padding">
+														<ul class="list-unstyled list-striped pricing-table">
+															<li> 50 GB </li>
+															<li> 1 TB </li>
+															<li> 1000 </li>
+															<li> 100 </li>
+															<li> $25 </li>
+
+															<li>
+																<i class="ace-icon fa fa-check green"></i>
+																1
+															</li>
+														</ul>
+
+														<div class="price">
+															<span class="label label-lg label-inverse arrowed-in arrowed-in-right">
+																$10
+																<small>/month</small>
+															</span>
+														</div>
+													</div>
+
+													<div>
+														<a href="#" class="btn btn-block btn-sm btn-warning">
+															<span>Buy</span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="pricing-span">
+											<div class="widget-box pricing-box-small widget-color-blue">
+												<div class="widget-header">
+													<h5 class="widget-title bigger lighter">Business</h5>
+												</div>
+
+												<div class="widget-body">
+													<div class="widget-main no-padding">
+														<ul class="list-unstyled list-striped pricing-table">
+															<li> 200 GB </li>
+															<li> Unlimited </li>
+															<li> 1000 </li>
+															<li> 200 </li>
+															<li> $25 </li>
+
+															<li>
+																<i class="ace-icon fa fa-check green"></i>
+																1
+															</li>
+														</ul>
+
+														<div class="price">
+															<span class="label label-lg label-inverse arrowed-in arrowed-in-right">
+																$15
+																<small>/month</small>
+															</span>
+														</div>
+													</div>
+
+													<div>
+														<a href="#" class="btn btn-block btn-sm btn-primary">
+															<span>Buy</span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="pricing-span">
+											<div class="widget-box pricing-box-small widget-color-green">
+												<div class="widget-header">
+													<h5 class="widget-title bigger lighter">Unlimited</h5>
+												</div>
+
+												<div class="widget-body">
+													<div class="widget-main no-padding">
+														<ul class="list-unstyled list-striped pricing-table">
+															<li> Unlimited </li>
+															<li> Unlimited </li>
+															<li> Unlimited </li>
+															<li> Unlimited </li>
+															<li> $50 </li>
+
+															<li>
+																<i class="ace-icon fa fa-check green"></i>
+																2
+															</li>
+														</ul>
+
+														<div class="price">
+															<span class="label label-lg label-inverse arrowed-in arrowed-in-right">
+																$25
+																<small>/month</small>
+															</span>
+														</div>
+													</div>
+
+													<div>
+														<a href="#" class="btn btn-block btn-sm btn-success">
+															<span>Buy</span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="pricing-span">
+											<div class="widget-box pricing-box-small widget-color-grey">
+												<div class="widget-header">
+													<h5 class="widget-title bigger lighter">Extreme</h5>
+												</div>
+
+												<div class="widget-body">
+													<div class="widget-main no-padding">
+														<ul class="list-unstyled list-striped pricing-table">
+															<li> Unlimited </li>
+															<li> Unlimited </li>
+															<li> Unlimited </li>
+															<li> Unlimited </li>
+															<li> $100 </li>
+
+															<li>
+																<i class="ace-icon fa fa-check green"></i>
+																3
+															</li>
+														</ul>
+
+														<div class="price">
+															<span class="label label-lg label-inverse arrowed-in arrowed-in-right">
+																$30
+																<small>/month</small>
+															</span>
+														</div>
+													</div>
+
+													<div>
+														<a href="#" class="btn btn-block btn-sm btn-grey">
+															<span>Buy</span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- /section:pages/pricing.small-body -->
+								</div><!-- PAGE CONTENT ENDS -->
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+							
+							
+							
 						</div><!-- /.row -->
 					</div><!-- /.page-content-area -->
 				</div><!-- /.page-content -->

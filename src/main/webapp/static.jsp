@@ -17,7 +17,6 @@
 		<!-- bootstrap & fontawesome -->
 		
 		<link href="<c:url value="/app/resources/css/bootstrap.min.css" />" rel="stylesheet">
-		
 		<link href="<c:url value="/app/resources/css/font-awesome.min.css" />" rel="stylesheet">
 		
 		
@@ -31,6 +30,23 @@
 		<link href="<c:url value="/app/resources/css/ace.min.css" />" rel="stylesheet">
 		<link href="<c:url value="/app/resources/css/ace-skins.min.css" />" rel="stylesheet">
 		<link href="<c:url value="/app/resources/css/ace-rtl.min.css" />" rel="stylesheet">
+		
+		<link href="<c:url value="/app/resources/css/select2.css" />" rel="stylesheet">
+		
+		<link href="<c:url value="/app/resources/css/ace-skins.min.css" />" rel="stylesheet">
+		<link href="<c:url value="/app/resources/css/ace-rtl.min.css" />" rel="stylesheet">
+		
+		
+	    <link href="<c:url value="/app/resources/css/chosen.css" />" rel="stylesheet">
+		<link href="<c:url value="/app/resources/css/datepicker.css" />" rel="stylesheet">
+		<link href="<c:url value="/app/resources/css/bootstrap-timepicker.css" />" rel="stylesheet">
+		<link href="<c:url value="/app/resources/css/daterangepicker.css" />" rel="stylesheet">
+		<link href="<c:url value="/app/resources/css/bootstrap-datetimepicker.css" />" rel="stylesheet">
+		<link href="<c:url value="/app/resources/css/colorpicker.css" />" rel="stylesheet">
+		
+		
+		<link href="<c:url value="/app/resources/css/chosen.css" />" rel="stylesheet" >
+		
 		
 		<!-- ace settings handler -->
 		
@@ -90,14 +106,25 @@
 		<script src="<c:url value="/app/resources/js/flot/jquery.flot.pie.min.js"/>"></script>
 		<script src="<c:url value="/app/resources/js/flot/jquery.flot.resize.min.js"/>"></script>
 		
-		
+	<%-- 	
 		<script src="<c:url value="/app/resources/js/fuelux/fuelux.wizard.min.js"/>"></script>
 		<script src="<c:url value="/app/resources/js/jquery.validate.min.js"/>"></script>
 		<script src="<c:url value="/app/resources/js/additional-methods.min.js"/>"></script>
 		<script src="<c:url value="/app/resources/js/bootbox.min.js"/>"></script>
 		<script src="<c:url value="/app/resources/js/jquery.maskedinput.min.js"/>"></script>
 		<script src="<c:url value="/app/resources/js/select2.min.js"/>"></script>
-		
+		 --%>
+		 
+		 
+		<script src="<c:url value="/app/resources/js/date-time/bootstrap-datepicker.min.js"/>"></script>
+		<script src="<c:url value="/app/resources/js/date-time/bootstrap-timepicker.min.js"/>"></script>
+		<script src="<c:url value="/app/resources/js/date-time/moment.min.js"/>"></script>
+		<script src="<c:url value="/app/resources/js/date-time/daterangepicker.min.js"/>"></script>
+		<script src="<c:url value="/app/resources/js/date-time/bootstrap-datetimepicker.min.js"/>"></script>
+		 
+		 
+		 <script src="<c:url value="/app/resources/js/typeahead.jquery.min.js"/>"></script>
+		 	
 		
 			<!--  Application specific JS -->
 		<script src="<c:url value="/app/resources/js/app/commonvalidations.js"/>"></script>

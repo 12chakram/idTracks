@@ -177,6 +177,42 @@
 				$('#modal-wizard .wizard-actions .btn[data-dismiss=modal]').removeAttr('disabled');
 				
 				
+				//typeahead.js
+				//example taken from plugin's page at: https://twitter.github.io/typeahead.js/examples/
+				var substringMatcher = function(strs) {
+					return function findMatches(q, cb) {
+						var matches, substringRegex;
+					 
+						// an array that will be populated with substring matches
+						matches = [];
+					 
+						// regex used to determine if a string contains the substring `q`
+						substrRegex = new RegExp(q, 'i');
+					 
+						// iterate through the pool of strings and for any string that
+						// contains the substring `q`, add it to the `matches` array
+						$.each(strs, function(i, str) {
+							if (substrRegex.test(str)) {
+								// the typeahead jQuery plugin expects suggestions to a
+								// JavaScript object, refer to typeahead docs for more info
+								matches.push({ value: str });
+							}
+						});
+			
+						cb(matches);
+					}
+				 }
+			
+				 $('input.typeahead').typeahead({
+					hint: true,
+					highlight: true,
+					minLength: 1
+				 }, {
+					name: 'states',
+					displayKey: 'value',
+					source: substringMatcher(ace.vars['US_STATES'])
+				 });
+				
 				/**
 				$('#date').datepicker({autoclose:true}).on('changeDate', function(ev) {
 					$(this).closest('form').validate().element($(this));
@@ -186,5 +222,48 @@
 					$(this).closest('form').validate().element($(this));
 				});
 				*/
+				 
+				 
+				 
+				//datepicker plugin
+					//link
+					$('.date-picker').datepicker({
+						autoclose: true,
+						todayHighlight: true
+					})
+					//show datepicker when clicking on the icon
+					.next().on(ace.click_event, function(){
+						$(this).prev().focus();
+					});
+				
+					//or change it into a date range picker
+					$('.input-daterange').datepicker({autoclose:true});
+				
+				
+					//to translate the daterange picker, please copy the "examples/daterange-fr.js" contents here before initialization
+					$('input[name=date-range-picker]').daterangepicker({
+						'applyClass' : 'btn-sm btn-success',
+						'cancelClass' : 'btn-sm btn-default',
+						locale: {
+							applyLabel: 'Apply',
+							cancelLabel: 'Cancel',
+						}
+					})
+					.prev().on(ace.click_event, function(){
+						$(this).next().focus();
+					});
+				
+				
+					$('#timepicker1').timepicker({
+						minuteStep: 1,
+						showSeconds: true,
+						showMeridian: false
+					}).next().on(ace.click_event, function(){
+						$(this).prev().focus();
+					});
+					
+					$('#date-timepicker1').datetimepicker().next().on(ace.click_event, function(){
+						$(this).prev().focus();
+					});
 				 
 }
