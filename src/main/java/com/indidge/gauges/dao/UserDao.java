@@ -1,11 +1,11 @@
 /**
  * 
  */
-package com.indidge.idtracks.dao;
+package com.indidge.gauges.dao;
 
 import java.util.List;
 
-import com.indidge.idtracks.entities.User;
+import com.indidge.gauges.entities.User;
 
 /**
  * @author katsi02

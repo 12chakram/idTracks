@@ -1,11 +1,11 @@
 /**
  * 
  */
-package com.indidge.idtracks.web.config;
+package com.indidge.gauges.web.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-import com.indidge.idtracks.config.AppConfig;
+import com.indidge.gauges.config.AppConfig;
 
 /**
  * @author Kumar Vayyala

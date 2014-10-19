@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.indidge.idtracks.config;
+package com.indidge.gauges.config;
 
 
 import java.util.Properties;
@@ -26,8 +26,8 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  *
  */
 @Configuration
-@ComponentScan(basePackages={"com.indidge.idtracks"},
-		excludeFilters=@ComponentScan.Filter(type=FilterType.REGEX, pattern={"com.indidge.idtracks.web.*"}))
+@ComponentScan(basePackages={"com.indidge.gauges"},
+		excludeFilters=@ComponentScan.Filter(type=FilterType.REGEX, pattern={"com.indidge.gauges.web.*"}))
 @PropertySource(value = { "classpath:application.properties" })
 @EnableScheduling
 @EnableAspectJAutoProxy

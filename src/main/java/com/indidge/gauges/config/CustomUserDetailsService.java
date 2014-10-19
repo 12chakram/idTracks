@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.indidge.idtracks.config;
+package com.indidge.gauges.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -9,9 +9,9 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
 
-import com.indidge.idtracks.entities.User;
-import com.indidge.idtracks.services.UserService;
-import com.indidge.idtracks.web.config.SecurityUser;
+import com.indidge.gauges.entities.User;
+import com.indidge.gauges.services.UserService;
+import com.indidge.gauges.web.config.SecurityUser;
 
 /**
  * @author Kumar Vayyala

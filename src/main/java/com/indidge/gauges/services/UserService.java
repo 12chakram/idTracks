@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.indidge.idtracks.services;
+package com.indidge.gauges.services;
 
 import java.util.List;
 
@@ -9,8 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.indidge.idtracks.entities.User;
-import com.indidge.idtracks.repositories.UserRepository;
+import com.indidge.gauges.entities.User;
+import com.indidge.gauges.repositories.UserRepository;
 //import com.sivalabs.springapp.dao.UserDao;
 
 

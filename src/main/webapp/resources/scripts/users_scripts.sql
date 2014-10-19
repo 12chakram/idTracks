@@ -1,17 +1,26 @@
-CREATE TABLE `users` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `email` varchar(45) NOT NULL,
-  `password` varchar(45) DEFAULT NULL,
-  `dob` date DEFAULT NULL,
+CREATE TABLE `USERS` (
+  `id` bigint(12) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `dob` datetime DEFAULT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `email_UNIQUE` (`email`)
-);
+  UNIQUE KEY `email_UNIQUE` (`email`);
 
-CREATE TABLE `roles` (
+  CREATE TABLE `ROLES` (
   `role_id` bigint(12) NOT NULL AUTO_INCREMENT,
+  `role_name` varchar(255) NOT NULL,
   `user_id` bigint(12) DEFAULT NULL,
-  `role_name` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`role_id`),
-  KEY `user_role_id_idx` (`user_id`),
-  CONSTRAINT `user_role_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-);
+  KEY `FK_user_role_id` (`user_id`),
+  CONSTRAINT `FK_user_role_id` FOREIGN KEY (`user_id`) REFERENCES `USERS` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+
+CREATE TABLE `ITEMS` (
+  `itemId` bigint(20) NOT NULL AUTO_INCREMENT,
+  `checkInDate` datetime DEFAULT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  `itemName` varchar(255) DEFAULT NULL,
+  `itemType` varchar(255) DEFAULT NULL,
+  `pmpDueDate` datetime DEFAULT NULL,
+  PRIMARY KEY (`itemId`);

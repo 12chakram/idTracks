@@ -1,16 +1,16 @@
 /**
  * 
  */
-package com.indidge.idtracks.web.controllers;
+package com.indidge.gauges.web.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 
-import com.indidge.idtracks.entities.User;
-import com.indidge.idtracks.services.UserService;
-import com.indidge.idtracks.web.config.SecurityUser;
+import com.indidge.gauges.entities.User;
+import com.indidge.gauges.services.UserService;
+import com.indidge.gauges.web.config.SecurityUser;
 
 /**
  * @author Kumar Vayyala

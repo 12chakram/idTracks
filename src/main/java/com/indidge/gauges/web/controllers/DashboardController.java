@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.indidge.idtracks.web.controllers;
+package com.indidge.gauges.web.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,14 +15,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
  *
  */
 @Controller
-@RequestMapping(value="/device")
-public class DeviceController 
+@RequestMapping(value="/dashboard")
+public class DashboardController 
 {
 	
-	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String getDevicePage(Model model) {
+	@RequestMapping(method = RequestMethod.GET)
+	public String goToDashboard(Model model) {
 		model.addAttribute("myname", "KumarVayyala");
-		return "device";
+		return "dashboard";
 	}
 	
 	

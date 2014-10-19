@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.indidge.idtracks.config;
+package com.indidge.gauges.config;
 
 import javax.sql.DataSource;
 

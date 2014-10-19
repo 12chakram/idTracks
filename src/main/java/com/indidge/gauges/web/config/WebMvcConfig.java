@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.indidge.idtracks.web.config;
+package com.indidge.gauges.web.config;
 
 import java.util.Properties;
 
@@ -24,7 +24,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
  * 
  */
 @Configuration
-@ComponentScan(basePackages = { "com.indidge.idtracks.web"}) 
+@ComponentScan(basePackages = { "com.indidge.gauges.web"}) 
 @EnableWebMvc
 public class WebMvcConfig extends WebMvcConfigurerAdapter
 {

@@ -1,11 +1,11 @@
-package com.indidge.idtracks.repositories;
+package com.indidge.gauges.repositories;
 
 import java.io.Serializable;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
-import com.indidge.idtracks.entities.User;
+import com.indidge.gauges.entities.User;
 
 public interface UserRepository extends JpaRepository<User, Serializable>{
 

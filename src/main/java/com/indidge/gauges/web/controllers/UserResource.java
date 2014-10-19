@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.indidge.idtracks.web.controllers;
+package com.indidge.gauges.web.controllers;
 
 import java.util.List;
 
@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.indidge.idtracks.entities.User;
-import com.indidge.idtracks.services.UserService;
+import com.indidge.gauges.entities.User;
+import com.indidge.gauges.services.UserService;
 
 /**
  * @author Kumar Vayyala

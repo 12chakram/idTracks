@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.indidge.idtracks.web.config;
+package com.indidge.gauges.web.config;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -11,8 +11,8 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.indidge.idtracks.entities.Role;
-import com.indidge.idtracks.entities.User;
+import com.indidge.gauges.entities.Role;
+import com.indidge.gauges.entities.User;
 
 /**
  * @author Kumar Vayyala

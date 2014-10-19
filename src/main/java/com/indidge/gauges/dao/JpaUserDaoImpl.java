@@ -1,4 +1,4 @@
-package com.indidge.idtracks.dao;
+package com.indidge.gauges.dao;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ import javax.persistence.TypedQuery;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.indidge.idtracks.entities.User;
+import com.indidge.gauges.entities.User;
 
 @Repository
 @Transactional

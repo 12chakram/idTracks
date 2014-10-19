@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<%@page import="com.indidge.idtracks.web.controllers.UserController"%>
+<%@page import="com.indidge.gauges.web.controllers.UserController"%>
 <%@include file="taglib.jsp"%>
 <jsp:include page="../../static.jsp"></jsp:include>
 

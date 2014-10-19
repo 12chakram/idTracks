@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.indidge.idtracks.entities;
+package com.indidge.gauges.entities;
 
 import java.util.Date;
 import java.util.HashSet;

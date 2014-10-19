@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.indidge.idtracks.config;
+package com.indidge.gauges.config;
 
 
 import java.util.Properties;
@@ -33,7 +33,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  */
 @Configuration
 @EnableTransactionManagement
-@EnableJpaRepositories(basePackages="com.indidge.idtracks.repositories")
+@EnableJpaRepositories(basePackages="com.indidge.gauges.repositories")
 public class PersistenceConfig {
 
 	@Autowired
@@ -60,7 +60,7 @@ public class PersistenceConfig {
 
 		factory.setDataSource(dataSource());
 		factory.setJpaVendorAdapter(vendorAdapter);
-		factory.setPackagesToScan("com.indidge.idtracks.entities");
+		factory.setPackagesToScan("com.indidge.gauges.entities");
 
 		Properties jpaProperties = new Properties();
 		jpaProperties.put("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));
@@ -95,7 +95,7 @@ public class PersistenceConfig {
 		DataSourceInitializer dataSourceInitializer = new DataSourceInitializer();
 		dataSourceInitializer.setDataSource(dataSource);
 		ResourceDatabasePopulator databasePopulator = new ResourceDatabasePopulator();
-		databasePopulator.addScript(new ClassPathResource("db.sql"));
+		databasePopulator.addScript(new ClassPathResource("users_scripts.sql"));
 		dataSourceInitializer.setDatabasePopulator(databasePopulator);
 		dataSourceInitializer.setEnabled(Boolean.parseBoolean(initDatabase));
 		return dataSourceInitializer;

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.indidge.idtracks;
+package com.indidge.gauges;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -15,9 +15,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.indidge.idtracks.config.AppConfig;
-import com.indidge.idtracks.entities.User;
-import com.indidge.idtracks.services.UserService;
+import com.indidge.gauges.config.AppConfig;
+import com.indidge.gauges.entities.User;
+import com.indidge.gauges.services.UserService;
 
 /**
  * @author Kumar Vayyala
